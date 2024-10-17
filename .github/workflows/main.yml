@@ -25,7 +25,7 @@ jobs:
           npm install eslint eslint-config-standard eslint@^8.0.1 eslint-plugin-import@^2.25.2 eslint-plugin-n@^16.0.0 eslint-plugin-promise@^6.0.0
           
           # Run ESLint on specific files within the correct directory
-          find ./backend-nodejs-capstone/secondChance-backend -name app.js -exec ./node_modules/.bin/eslint -c .eslintrc.js {} +
+          find ./secondChance-backend -name app.js -exec ./node_modules/.bin/eslint -c .eslintrc.js {} +
           find ./backend-nodejs-capstone/secondChance-backend -name auth.js -exec ./node_modules/.bin/eslint -c .eslintrc.js {} +
           find ./backend-nodejs-capstone/secondChance-backend -name secondChanceItemsRoutes.js -exec ./node_modules/.bin/eslint -c .eslintrc.js {} +
           find ./backend-nodejs-capstone/secondChance-backend -name searchRoutes.js -exec ./node_modules/.bin/eslint -c .eslintrc.js {} +
